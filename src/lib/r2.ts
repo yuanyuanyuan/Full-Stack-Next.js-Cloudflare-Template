@@ -23,9 +23,7 @@ export async function uploadToR2(
         // Convert File to ArrayBuffer
         const arrayBuffer = await file.arrayBuffer();
 
-        // Upload to R2
-        // !starterconf - update this to match your R2 bucket binding name
-        // change "next_cf_app_bucket" to your R2 bucket binding name on `wrangler.jsonc`
+        // Upload to R2（绑定名称需与 wrangler.jsonc 中的配置一致）
         const result = await env.next_cf_app_bucket.put(key, arrayBuffer, {
             httpMetadata: {
                 contentType: file.type,

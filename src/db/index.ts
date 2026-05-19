@@ -4,8 +4,7 @@ import * as schema from "./schema";
 
 export async function getDb() {
     const { env } = await getCloudflareContext();
-    // !starterconf - update this to match your D1 database binding name
-    // change "next_cf_app" to your D1 database binding name on `wrangler.jsonc`
+    // 绑定名称需与 wrangler.jsonc 中的配置一致
     return drizzle(env.next_cf_app, { schema });
 }
 
