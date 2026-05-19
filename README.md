@@ -4,7 +4,7 @@
 
 一个生产就绪的全栈应用模板，基于 Next.js 15 和 Cloudflare 边缘基础设施构建。适用于 MVP 开发，提供慷慨的免费额度，并可无缝扩展到企业级应用。
 
-**灵感来源于 [Cloudflare SaaS Stack](https://github.com/supermemoryai/cloudflare-saas-stack)** - 这是驱动 [Supermemory.ai](https://git.new/memory) 的同一技术栈，仅用 $5/月 即可服务 20k+ 用户。本模板使用 Cloudflare Workers（而非 Pages）进行现代化改造，包含完整的 D1 和 R2 示例，并提供完整的开发工作流。
+**基于 Cloudflare 官方最佳实践** - 采用 Cloudflare Workers（而非 Pages）的现代化架构，包含完整的 D1 数据库和 R2 对象存储示例，提供开箱即用的全栈开发工作流。经过优化，可在极低成本下支持大规模用户访问。
 
 
 ## 🌟 为什么选择 Cloudflare + Next.js？
